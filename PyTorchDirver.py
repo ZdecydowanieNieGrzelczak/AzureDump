@@ -510,21 +510,21 @@ if __name__ == '__main__':
 
     control_dict = {
         "RESET_TARGET_EVERY": 35,
-        "SAVE_TO_PATH_EVERY": 100,
+        "SAVE_TO_PATH_EVERY": 5000,
         "ACTOR_PATH": os.path.join(MODEL_PATH, "Actor_model.json"),
         "CRITIC_PATH": os.path.join(MODEL_PATH, "Critic_model.json"),
-        "SLIDING_INIT_VALUE": 50,
-        "CONTINUE_LEARNING": False,
+        "SLIDING_INIT_VALUE": 2000,
+        "CONTINUE_LEARNING": True,
         "SLIDING_INCREMENTAL_VALUE": 0,
         "PLOT_TREND_EVERY": 2000,
         "TEST_VALUES": False,
-        "SAVE_BUFFERS_EVERY": 1000,
+        "SAVE_BUFFERS_EVERY": 5000,
     }
 
     exploration_dict = {
         "FORCED_EXPLORATION": False,
-        "EXPLORATION_TIME": 500,
-        "EXPLOITATION_TME": 500,
+        "EXPLORATION_TIME": 200,
+        "EXPLOITATION_TME": 300,
         "STARTING_EPSILON": 0.9,
         "ENDING EPSILONE": 0.0001,
         "currently_exploring": False,
